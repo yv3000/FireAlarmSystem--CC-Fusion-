@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MapFragment">
+
+    <TextView
+        android:id="@+id/text_map_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Evacuation Map"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_select_floor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Select your current floor:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_map_title" />
+
+    <Spinner
+        android:id="@+id/spinner_floor"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:drawable/btn_dropdown"
+        app:layout_constraintTop_toBottomOf="@+id/text_select_floor" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/map_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#EEEEEE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_floor">
+
+        <ImageView
+            android:id="@+id/image_floor_plan"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitCenter"
+            tools:src="@drawable/ic_nav_map"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/highlight_stairs_top"
+            android:layout_width="99dp"
+            android:layout_height="119dp"
+            android:background="#80F44336"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/image_floor_plan"
+            app:layout_constraintEnd_toEndOf="@id/image_floor_plan"
+            app:layout_constraintHorizontal_bias="0.532"
+            app:layout_constraintStart_toStartOf="@id/image_floor_plan"
+            app:layout_constraintTop_toTopOf="@id/image_floor_plan"
+            app:layout_constraintVertical_bias="0.921" />
+
+        <View
+            android:id="@+id/highlight_stairs_side"
+            android:layout_width="121dp"
+            android:layout_height="119dp"
+            android:background="#80F44336"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/image_floor_plan"
+            app:layout_constraintEnd_toEndOf="@id/image_floor_plan"
+            app:layout_constraintHorizontal_bias="0.833"
+            app:layout_constraintStart_toStartOf="@id/image_floor_plan"
+            app:layout_constraintTop_toTopOf="@id/image_floor_plan"
+            app:layout_constraintVertical_bias="0.381" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/indicator_fire"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="invisible"
+            app:cardBackgroundColor="#D50000"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:layout_constraintBottom_toBottomOf="@id/image_floor_plan"
+            app:layout_constraintEnd_toEndOf="@id/image_floor_plan"
+            app:layout_constraintHorizontal_bias="0.359"
+            app:layout_constraintStart_toStartOf="@id/image_floor_plan"
+            app:layout_constraintTop_toTopOf="@id/image_floor_plan"
+            app:layout_constraintVertical_bias="0.205">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="FIRE"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/indicator_user"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:visibility="invisible"
+            app:cardBackgroundColor="#2196F3"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp"
+            app:layout_constraintBottom_toBottomOf="@id/image_floor_plan"
+            app:layout_constraintEnd_toEndOf="@id/image_floor_plan"
+            app:layout_constraintHorizontal_bias="0.426"
+            app:layout_constraintStart_toStartOf="@id/image_floor_plan"
+            app:layout_constraintTop_toTopOf="@id/image_floor_plan"
+            app:layout_constraintVertical_bias="0.558">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="ME"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Emergency Contacts"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:text="Disclaimer: Standard SMS charges may apply. Ensure numbers include country codes (e.g., +91)."
+            android:textColor="#D32F2F"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/et_contact_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contact 1 (Required)"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/et_contact_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contact 2 (Optional)"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/et_contact_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contact 3 (Optional)"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/et_contact_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contact 4 (Optional)"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/et_contact_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contact 5 (Optional)"
+            android:inputType="phone" />
+
+    </LinearLayout>
+</ScrollView>
