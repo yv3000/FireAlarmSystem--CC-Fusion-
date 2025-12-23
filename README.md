@@ -75,7 +75,8 @@ FireAlarmSystem--CC-Fusion-
 ## 👨‍💻 Contributors
 
 - **Aryan Kahar** (@aryankahar31)  
-- **Yuvraj Patil** (@yv3000)
+- **YASH VISHWAKARMA** (@yv3000)
+- **SURAJ SINGH** (@Suraz-02)
 
 ---
 
