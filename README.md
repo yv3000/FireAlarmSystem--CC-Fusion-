@@ -77,7 +77,7 @@ FireAlarmSystem--CC-Fusion-
 - **Aryan Kahar** (@aryankahar31)  
 - **YASH VISHWAKARMA** (@yv3000)
 - **SURAJ SINGH** (@Suraz-02)
-
+- **MAYANK PATIL** (@Mayankpatil2104)
 ---
 
 ## 📄 License
